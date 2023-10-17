@@ -6,6 +6,8 @@
 <meta name="viewmport"  content="width=device-width, initial-scale=1.0">
 <title>about me</title>
 <link rel="stylesheet" href="style.css">
+<script src="JS/script.js"></script>
+
 
 
     </head>
@@ -43,62 +45,78 @@
                         <br> I have been on computer since i was 7 years old. But just year ago (2022)  i got myself into coding industry. 
                         <br> Before this i graduated to be a <b>Security alarm installer</b> in 2021.</p>
                         
-                        <div class="tabs">
-                            <p class="tablink activelink" onclick="opentab('Skills')"> Skills</p>
-                            <p class="tablink"onclick="opentab('Experience')"> Experience</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                            <p class="tab-links"onclick="opentab('Experience')"> Experience</p>
                             
                         </div>
-                        <div class="tabcontent activetab" id="Skills">
+                        <div class="tab-contents active-tab" id="Skills">
                             <ul>
-                                <table>
-                                    <tr>
-                                      <th>Learned</th>
-                                      <th>Level</th>
-                                    </tr>
-                                    <tr>
-                                      <td>C language</td>
-                                      <td>Basics</td>
-                                     
-                                    </tr>
-                                    <tr>
-                                      <td>Arduino Uno</td>
-                                      <td>Basics</td>
-                                    </tr> 
-                                    <tr>
-                                    <td>Python</td>
-                                    <td>passable</td>
-                                </tr>
-                                <tr>
-                                    <td>C++</td>
-                                    <td>average</td>
-                                </tr>
-                                <tr>
-                                    <td>HTML/CSS/JS</td>
-                                    <td>learning</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Java</td>
-                                    <td>learning</td>
-                                    
-                                </tr>
-                                    </table>
-                               
-                            </ul>
+                               <li><span>C language</span><br>Basics</li>
+                               <li><span>Arduino Uno</span><br>Basics</li>
+                               <li><span>Python</span><br>little basics</li>
+                               <li><span>C++</span><br>Average</li>
+                               <li><span>HTML/CSS/JS</span><br>Currently learning</li></ul>
+                            
                         </div>
-                        <div class="tabcontent"id="Experience">
+                        <div class="tab-contents" id="Experience">
                             <ul>
-                                <li><span> </span> </li>
-                                <li><span> </span> </li>
-                                <li><span> </span> </li>
-                                <li><span> </span> </li>
-                            </ul>
+                               <li><span>2021</span><br>graduated from highschool</li>
+                               <li><span>2021 Summer</span><br>Worked as building assistant</li>
+                               <li><span>2022 January</span><br>Army</li>
+                               <li><span>2022 Fall</span><br>IT student <strong>(currently)</strong></li>
+                               
+                            
+                        </div>
                 </div>
             </div>
         </div>
       </div>
-
-
-
+      <div id="portfolio"> 
+        <div class="container">
+            <h1 class="Subtitle"> My  Work </h1>
+            <div class="work-list">
+                <div class="work1">
+                    <img src="images/arduino.jpg">
+                    <div class="info">
+                        <table>
+                            <tr>
+                              <th>Project</th>
+                              <th>year</th>
+                              <th>group of</th>
+                            </tr>
+                            <tr>
+                              <td>Wireless controller</td>
+                              <td>2022</td>
+                              <td>4</td>
+                            </tr>
+                            </table> <br>
+                        <a href="https://github.com/HenriHyv/MyCode/tree/main/Wireless%20controller%20code"
+                            target="_blank">Link</a> for more information.
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pankkiautomaatti.png">
+                    <div class="info2">
+                        <table>
+                            <tr>
+                              <th>Project</th>
+                              <th>year</th>
+                              <th>group of</th>
+                            </tr>
+                            <tr>
+                              <td>Automated teller machine</td>
+                              <td>2023</td>
+                              <td>5</td>
+                            </tr>
+                            </table> <br>
+                        <a href="https://github.com/HenriHyv/MyCode/tree/main/Wireless%20controller%20code"
+                            target="_blank">Link</a> for more information.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     </body>
 </html>
