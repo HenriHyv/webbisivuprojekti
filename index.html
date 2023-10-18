@@ -7,8 +7,8 @@
 <title>about me</title>
 <link rel="stylesheet" href="style.css">
 <script src="JS/script.js"></script>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<form id="contact-form" action="/path/to/process_form.php" method="POST">
+
+
 
 
     </head>
@@ -30,8 +30,8 @@
                     <p>
                         Software student</p>
                         <h1> Welcome to my <span>Portfolio Site</span></h1>
-                   
-                </div>
+                      
+                    </div>
             </div>
         </header>
       </div>  
@@ -46,6 +46,24 @@
                     <p> Hi, I'm Henri Hyvärinen and i am second year student in Software engineering at Oulu's University of Applied Sciences. I have
                         <br> I have been on computer since i was 7 years old. But just year ago (2022)  i got myself into coding industry. 
                         <br> Before this i graduated to be a <b>Security alarm installer</b> in 2021.</p>
+                        <br> <h2>facts about me</h2> <br>
+
+<p>Check each one out</p> <br>
+
+<form>
+    <input type="radio" id="Libra" name="fav_language" value="Libra">
+    <label for="html">Libra</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">Family</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label> 
+    <br><br>
+    <p  id="factText"> <br><br>Facts will be displayed here.</p>
+</form>
+
+
+
+
                         
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
@@ -121,50 +139,12 @@
         </div>
     </div>
     <div class="contact-container">
-        <form id="my-form" action="https://formspree.io/f/mqkvwoyw" method="POST">
-            <label>Email:</label>
-            <input type="email" name="email" />
-            <label>Message:</label>
-            <input type="text" name="message" />
-            <button id="my-form-button">Submit</button>
-            <p id="my-form-status"></p>
-          </form>
+        
     </form>
 </div>
     </div>
 </div>
     
     </body>
-    <script>
-        var form = document.getElementById("my-form");
-        
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("my-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              status.innerHTML = "Thanks for your submission!";
-              form.reset()
-            } else {
-              response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                  status.innerHTML = "Oops! There was a problem submitting your form"
-                }
-              })
-            }
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
+    
 </html>

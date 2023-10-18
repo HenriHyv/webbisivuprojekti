@@ -1,5 +1,4 @@
-
-
+// JavaScript for tab functionality (keep this separate)
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -12,44 +11,27 @@ function opentab(tabname) {
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
-  
-    }
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            alert('This website is made for Web basics course. This is not professional work!');
-        }, 1000); // 1 sekuntint timeri
-    });
-    
-    var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-    
-  
+}
 
+document.addEventListener("DOMContentLoaded", function() {
+    var factTextElement = document.getElementById('factText');
+    var radioButtons = document.querySelectorAll('input[name="fav_language"]');
+
+    // Add a change event listener to each radio button
+    radioButtons.forEach(function(radioButton) {
+        radioButton.addEventListener('change', function() {
+            // Check if the radio button is checked
+            if (this.checked) {
+                var selectedOption = this.value;
+                // Update the paragraph text with the corresponding facts
+                if (selectedOption === 'Libra') {
+                    factTextElement.textContent = 'Librans are extroverted, cosy, and friendly people. Librans, like the Scales that symbolise the sign, are often concerned with attaining balance, harmony, peace, and justice in the world. With their vast stores of charm, intelligence, frankness, persuasion, and seamless connectivity, they are well-equipped to do so.';
+                } else if (selectedOption === 'CSS') {
+                    factTextElement.textContent = 'CSS is a styling language used for designing the layout and appearance of web pages.';
+                } else if (selectedOption === 'JavaScript') {
+                    factTextElement.textContent = 'JavaScript is a scripting language used for adding interactivity to web pages.';
+                }
+            }
+        });
+    });
+});
