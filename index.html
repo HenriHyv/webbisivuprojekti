@@ -7,11 +7,13 @@
 <title>about me</title>
 <link rel="stylesheet" href="style.css">
 <script src="JS/script.js"></script>
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<form id="contact-form" action="/path/to/process_form.php" method="POST">
 
 
     </head>
     <body>
+        <header>
       <div id="header">
         <div>
             <div id="container">
@@ -31,9 +33,9 @@
                    
                 </div>
             </div>
-        
+        </header>
       </div>  
-      <div id="about">
+      <section  id="about">
         <div class="container">
             <div class="row">
                 <div class="about-1">
@@ -66,12 +68,13 @@
                                <li><span>2022 January</span><br>Army</li>
                                <li><span>2022 Fall</span><br>IT student <strong>(currently)</strong></li>
                                
-                            
+                              
                         </div>
                 </div>
             </div>
         </div>
       </div>
+    </section>
       <div id="portfolio"> 
         <div class="container">
             <h1 class="Subtitle"> My  Work </h1>
@@ -117,6 +120,19 @@
             </div>
         </div>
     </div>
+    <div class="contact-container">
+        <form id="my-form" action="https://formspree.io/f/mqkvwoyw" method="POST">
+            <label>Email:</label>
+            <input type="email" name="email" />
+            <label>Message:</label>
+            <input type="text" name="message" />
+            <button id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
+          </form>
+    </form>
+</div>
+    </div>
+</div>
     
     </body>
 </html>
