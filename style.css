@@ -268,3 +268,26 @@ background: blue;
     background: #262626;
     font-weight: 100;
 }
+.toggle-button {
+    margin-top: 20%;
+    
+    cursor: pointer;
+    background-color: grey; /* Button background color */
+    color: #FFFFFF; /* Button text color */
+    padding: 5px 10px; /* Less horizontal padding around the button text */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center-align text */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+
+/* Style to initially hide the repository list */
+
+
+#repo-list{
+    display: none;
+    text-align: center;
+}
