@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var radioButtons = document.querySelectorAll('input[name="fav_language"]');
 
     if (!factTextElement) {
-        console.error('factTextElement not found. Check your HTML structure.');
+        console.error('factTextElement not found. Check your HTML :)');
         return;
     }
 
@@ -81,7 +81,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Display repositories on the page
                 repositories.forEach(repo => {
                     var repoElement = document.createElement('div');
-                    repoElement.innerHTML = `<a href="${repo.url}" target="_blank">${repo.name}</a>`;
+                    var repoLink = document.createElement('a');
+                    repoLink.href = repo.url;
+                    repoLink.target = '_blank';
+                    repoLink.textContent = repo.name;
+                    repoLink.style.color = 'white'; // Set the text color to white
+                    repoElement.appendChild(repoLink);
                     repoListElement.appendChild(repoElement);
                 });
             })
@@ -141,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const phoneLink = document.getElementById("phone-link");
     phoneLink.href = myContactInfo.phone;
-    phoneLink.textContent = "0404150535";
+    phoneLink.textContent = "+358404150535";
 
     const facebookLink = document.getElementById("facebook-link");
     facebookLink.href = myContactInfo.facebook;
