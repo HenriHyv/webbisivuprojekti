@@ -291,3 +291,51 @@ background: blue;
     display: none;
     text-align: center;
 }
+@media (max-width: 768px) {
+    /* Your CSS rules for small screens */
+    body {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+    /* Simplify navigation */
+    .nav-menu {
+        display: none; /* Hide the navigation menu */
+    }
+    /* Increase content density */
+    .content {
+        margin: 10px; /* Reduce margins for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Your CSS rules for tablets */
+    body {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
+    /* Optimize layout for larger screens */
+    .main-content {
+        width: 80%; /* Wider content area for tablets */
+    }
+    /* Enhance navigation for tablets */
+    .nav-menu li {
+        padding: 10px; /* Larger tap/click targets */
+    }
+}
+
+/* Styles for desktop screens */
+@media (min-width: 1025px) {
+    /* Your CSS rules for larger screens */
+}
+@media (min-width: 1025px) {
+    /* Your CSS rules for larger screens */
+    body {
+        font-size: 20px; /* Adjust font size for desktops */
+    }
+    /* Multi-column layout */
+    .content {
+        column-count: 2; /* Create two columns for content */
+    }
+    /* Fine-tune typography */
+    h1 {
+        font-size: 36px; /* Larger headings for desktops */
+    }
+}

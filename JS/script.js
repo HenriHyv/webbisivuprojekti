@@ -2,6 +2,7 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
+
 function opentab(tabname) {
     for (tablink of tablinks) {
         tablink.classList.remove("active-link");
@@ -46,6 +47,14 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+    function showAlert() {
+        setTimeout(function() {
+            alert("This Webpage is made for our School course Website basics. This is not professional work!");
+        }, 1000); 
+    }
+
+    // Call the showAlert function when the page is loaded
+    window.onload = showAlert;
 
     var repoListElement = document.getElementById('repo-list');
 
@@ -106,5 +115,36 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add a click event listener to the toggle button
     toggleButton.addEventListener('click', toggleRepoList);
     
+    function ContactInfo(github, email, phone, facebook) {
+        this.github = github;
+        this.email = email;
+        this.phone = phone;
+        this.facebook = facebook;
+    }
+
+    // Contact info 
+    const myContactInfo = new ContactInfo(
+        "https://github.com/HenriHyv",
+        "mailto:henri.hyvarinen1@gmail.com",
+        "tel:+358404150535",
+        "https://www.facebook.com/henri.hyvarinen.733"
+    );
+
+    // Update the HTML content with the contact information
+    const githubLink = document.getElementById("github-link");
+    githubLink.href = myContactInfo.github;
+    githubLink.textContent = "Github";
+
+    const emailLink = document.getElementById("email-link");
+    emailLink.href = myContactInfo.email;
+    emailLink.textContent = "Email";
+
+    const phoneLink = document.getElementById("phone-link");
+    phoneLink.href = myContactInfo.phone;
+    phoneLink.textContent = "0404150535";
+
+    const facebookLink = document.getElementById("facebook-link");
+    facebookLink.href = myContactInfo.facebook;
+    facebookLink.textContent = "Facebook";
 });
 
