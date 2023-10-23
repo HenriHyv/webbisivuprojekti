@@ -23,6 +23,7 @@ Consistent use of semantic HTML throughout, ensuring better structure and unders
 -löytyy
 
 --------CSS ------ 5/5
+
 1/5:
 Basic CSS styling (colors, fonts).
 -löytyy
@@ -35,7 +36,7 @@ Use of classes and IDs to style specific elements.
 Implementation of responsive design elements.
 -löytyy
 
-Learn about Responsive Design
+
 4/5:
 Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)
 -löytyy
@@ -71,6 +72,7 @@ Consistent use of Object-Oriented JavaScript principles.
 
 
 --------Asynchronous Operations--------- 4/5  puuttuu 5/5:  -enhance user experience (like filtering, sorting).  
+
 1/5:
 Use of timers.
 -löytyy
@@ -82,6 +84,7 @@ Successful implementation of an AJAX call or Fetch.
 3/5:
 Data from the asynchronous call is displayed on the webpage.
 -löytyy
+
 4/5:
 Error handling is implemented (for failed API calls, etc.).
 -löytyy
