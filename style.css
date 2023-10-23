@@ -6,12 +6,12 @@
 }
 @media screen and (max-width: 600px) {
     .video-container {
-        padding-bottom: 1; /* Remove the aspect ratio padding for smaller screens */
+        padding-bottom: 1; 
     }
     
     .video-container iframe {
-        width: 100%; /* Make the video occupy the full width of the container */
-        height: auto; /* Allow the video's height to adjust automatically */
+        width: 100%; 
+        height: auto; 
     }
 }
 html{
@@ -231,11 +231,11 @@ border-radius: 15px;
 table {
     border-collapse: collapse;
     width: 100%;
-    border: 2px solid white; /* Add a white border to the table */
+    border: 2px solid white; 
   }
 
   th, td {
-    border: 2px solid white; /* Add a white border to table headers and data cells */
+    border: 2px solid white; 
     padding: 8px;
     text-align: left;
   }
@@ -259,14 +259,14 @@ background: blue;
 }
 .button{
     margin-top: 70px;
-    padding: 15px 30px; /* Adjust the padding to make the button larger */
-    font-size: 18px; /* Increase the font size */
-    background-color: whitesmoke; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove the border */
-    border-radius: 5px; /* Add rounded corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
-    text-decoration: none; /* Remove underlines */
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: whitesmoke; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
     display: inline-block
     
 }
@@ -280,18 +280,18 @@ background: blue;
 .button-container {
     margin-top: 50px;
     background-color: grey;
-    padding: 10px; /* Add some padding for spacing */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .toggle-button {
     cursor: pointer;
     background-color:black;
     color: #FFFFFF;
-    padding: 5px 15px; /* Adjust the padding to control button size */
+    padding: 5px 15px; 
     border: none;
     border-radius: 5px;
     font-size: 14px;
@@ -302,7 +302,7 @@ background: blue;
 
 
 
-/* Style to initially hide the repository list */
+
 
 
 #repo-list{
@@ -322,5 +322,5 @@ background: blue;
 #phone-link,
 #facebook-link {
     color: white;
-     /* Remove underlines from links */
+     
 }

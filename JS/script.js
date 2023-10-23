@@ -53,14 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 1000); 
     }
 
-    // Call the showAlert function when the page is loaded
+    
     window.onload = showAlert;
 
     var repoListElement = document.getElementById('repo-list');
 
-    // Function to fetch and display repositories
+    // Function to fetching
     function fetchRepositories() {
-        // Fetch your GitHub repositories
+        // Fetching
         fetch('https://api.github.com/users/henrihyv/repos')
             .then(response => {
                 if (!response.ok) {
@@ -69,34 +69,34 @@ document.addEventListener("DOMContentLoaded", function() {
                 return response.json();
             })
             .then(data => {
-                // Process and display repository data
+                // Process data
                 var repositories = data.map(repo => ({
                     name: repo.name,
                     url: repo.html_url
                 }));
 
-                // Clear any existing content in the repo-list element
+                // Clearaus
                 repoListElement.innerHTML = '';
 
-                // Display repositories on the page
+                //Repository display
                 repositories.forEach(repo => {
                     var repoElement = document.createElement('div');
                     var repoLink = document.createElement('a');
                     repoLink.href = repo.url;
                     repoLink.target = '_blank';
                     repoLink.textContent = repo.name;
-                    repoLink.style.color = 'white'; // Set the text color to white
+                    repoLink.style.color = 'white'; 
                     repoElement.appendChild(repoLink);
                     repoListElement.appendChild(repoElement);
                 });
             })
             .catch(error => {
-                // Handle errors here
+                // error käsittely
                 console.error('Fetch error:', error);
             });
     }
 
-    // Call the fetchRepositories function to load repositories
+    //Call the fetchRepositories function to load
     fetchRepositories();
     
 });
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var toggleButton = document.getElementById('toggle-button');
     var repoList = document.getElementById('repo-list');
 
-    // Function to toggle the visibility of the repository list
+    //toggle
     function toggleRepoList() {
         if (repoList.style.display === 'none' || repoList.style.display === '') {
             repoList.style.display = 'block';
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Add a click event listener to the toggle button
+    // event listener
     toggleButton.addEventListener('click', toggleRepoList);
     
     function ContactInfo(github, email, phone, facebook) {
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "https://www.facebook.com/henri.hyvarinen.733"
     );
 
-    // Update the HTML content with the contact information
+    // Contacti
     const githubLink = document.getElementById("github-link");
     githubLink.href = myContactInfo.github;
     githubLink.textContent = "Github";
