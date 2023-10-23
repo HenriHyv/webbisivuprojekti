@@ -56,6 +56,7 @@ body {
 
 .container{
     padding: 10px 10%;
+    width: 100%;
 
 }
 nav{
@@ -286,6 +287,8 @@ margin-top: 20px;
 #contact{
     margin-top: 300px;
     background-color: rgba(128, 128, 128, 0.1);
+    width: auto;
+    
 }
 
 .btn.btn2{
@@ -312,6 +315,7 @@ background: blue;
     padding: 20px 0;
     background: #262626;
     font-weight: 100;
+    width: auto;
 }
 .button-container {
     margin-top: 50px;
@@ -349,7 +353,7 @@ background: blue;
 }
 .video-container {
  margin-top: 50px;
- width: auto;
+ text-align: center;
 }
 
 .button-container h1{
