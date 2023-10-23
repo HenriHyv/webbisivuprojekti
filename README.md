@@ -23,6 +23,7 @@ Consistent use of semantic HTML throughout, ensuring better structure and unders
 -löytyy
 
 --------CSS ------ 5/5
+
 1/5:
 Basic CSS styling (colors, fonts).
 -löytyy
