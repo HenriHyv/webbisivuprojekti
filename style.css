@@ -1,19 +1,44 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+
+
 @media screen and (max-width: 600px) {
+    
     .video-container {
-        padding-bottom: 1; 
+        padding-bottom: 56.25%; 
+        margin-top: 20px; 
+        width: auto;
+    }
+
+    
+    #header {
+        background-image: none;
+    }
+
+    
+    #about {
+        margin-top: 20px; 
+    }
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 5px 5%;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
     }
     
-    .video-container iframe {
-        width: 100%; 
-        height: auto; 
-    }
 }
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -87,7 +112,7 @@ nav ul li a:hover::after{
 
 /*-----------------about------------------*/
 #about  {
-    margin-top: 40%;
+    margin-top: 200px;
     padding: 80px 0;
     
     background-color: rgba(128, 128, 128, 0.1);
@@ -109,8 +134,9 @@ nav ul li a:hover::after{
 border-radius: 50%;
 width: 90%;
 border-radius: 15px;
-
+max-width: 100%;
 }
+
 
 .about-2{
    
@@ -177,51 +203,61 @@ border-radius: 15px;
     display: block;
 }
   
-#porfolio{
+#porfolio {
     padding: 50px 0;
 }
-.work-list
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
     margin-top: 40px;
 }
-.work{
-    border-radius: 10px;
-    position: relative;
-   
 
+.work {
+    flex-basis: calc(50% - 5px); 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.1);
+    text-align: center; 
+}
+.work1 {
+    flex-basis: calc(50% - 20px); 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.1);
+    text-align: center; 
 }
 
-.work img{
-    
-    width: 100%;
-    height: 77%;
+.work img {
+    max-width: 100%; 
+    height: auto;
     border-radius: 10px;
-   display: block;
+    display: block;
 }
-.work1 img{
-    width: 60%;
-    height: 77%;
+.work1 img {
+    max-width: 100%; 
+    height: 100%;
+    border-radius: 10px;
+    display: block;
 }
-.info{
+
+.info, .info2 {
     margin-top: 5px;
-    width: 60%;
-    height: 14%;
-    
     border-radius: 10px;
-    
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.1);
+    text-align: center;
 }
-.info2{
-    margin-top: 5px;
+
+.info2 {
     width: 100%;
-    height: 12%;
-    
-    border-radius: 10px;
-   
-    
 }
+
+
 
 
 .Subtitle{
@@ -285,6 +321,7 @@ background: blue;
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
+    width: auto;
 }
 
 .toggle-button {
@@ -298,6 +335,7 @@ background: blue;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    
 }
 
 
@@ -311,6 +349,7 @@ background: blue;
 }
 .video-container {
  margin-top: 50px;
+ width: auto;
 }
 
 .button-container h1{
