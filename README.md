@@ -71,6 +71,7 @@ Consistent use of Object-Oriented JavaScript principles.
 
 
 --------Asynchronous Operations--------- 4/5  puuttuu 5/5:  -enhance user experience (like filtering, sorting).  
+
 1/5:
 Use of timers.
 -löytyy
