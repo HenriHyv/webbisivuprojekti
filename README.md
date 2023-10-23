@@ -35,7 +35,7 @@ Use of classes and IDs to style specific elements.
 Implementation of responsive design elements.
 -löytyy
 
-Learn about Responsive Design
+
 4/5:
 Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)
 -löytyy
@@ -83,6 +83,7 @@ Successful implementation of an AJAX call or Fetch.
 3/5:
 Data from the asynchronous call is displayed on the webpage.
 -löytyy
+
 4/5:
 Error handling is implemented (for failed API calls, etc.).
 -löytyy
