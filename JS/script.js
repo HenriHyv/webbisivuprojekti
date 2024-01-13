@@ -23,30 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
-    // eventin kuuntelia jokaiselle napille
-    radioButtons.forEach(function(radioButton) {
-        radioButton.addEventListener('change', function() {
-            // Check if the radio button is checked
-            if (this.checked) {
-                var selectedOption = this.value;
-                // päivittää halutun tiedon klikatessa
-                try {
-                    if (selectedOption === 'Libra') {
-                        factTextElement.textContent = 'Librans are extroverted, cosy, and friendly people. Librans, like the Scales that symbolise the sign, are often concerned with attaining balance, harmony, peace, and justice in the world. With their vast stores of charm, intelligence, frankness, persuasion, and seamless connectivity, they are well-equipped to do so.';
-                    } else if (selectedOption === 'Family') {
-                        factTextElement.textContent = 'I have 5 siblings, 4 big sisters and 1 big brother. My brother is also in IT industry and my cousin is working at Remedy! it is a finnish gaming company';
-                    } else if (selectedOption === 'Hobbies') {
-                        factTextElement.textContent = 'Besides coding, i also enjoy jogging, gymnastics, video games and reading.';
-                    } else {
-                        throw new Error('Invalid option selected: ' + selectedOption);
-                    }
-                } catch (error) {
-                    console.error('ERROR!:', error.message); // näyttää errorin
-                    alert('ERROR CAME, PLS TRY AGAIN.'); //Error mikä näytetään käyttäjälle alert boxina
-                }
-            }
-        });
-    });
+   
     function showAlert() {
         setTimeout(function() {
             alert("This Webpage is made for our School course Website basics. This is not professional work!");
